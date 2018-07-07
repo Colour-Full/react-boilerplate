@@ -4,11 +4,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { fetchData } from './actions/fetch_hello_world'
-import { detectBrowser } from 'rulsoft-browser-logger'
 
 type Props = {
   hi: any,
-  logger: () => mixed,
   fetchData: any,
   helloWorld: {
     loading: boolean,
@@ -26,7 +24,6 @@ class HelloWorld extends React.Component<Props, State> {
     super(props)
     props = {
       hi: undefined,
-      logger: this.props.logger,
       fetchData: this.props.fetchData,
       helloWorld: {
         loading: this.props.helloWorld.loading,
@@ -40,8 +37,6 @@ class HelloWorld extends React.Component<Props, State> {
     }
   }
   componentWillMount () {
-    const browser = detectBrowser()
-    this.props.logger.info({browser: browser}, 'Hi from the client')
     setTimeout(
       () => this.props.fetchData('http://example.com/helloWorld'),
       1000)
