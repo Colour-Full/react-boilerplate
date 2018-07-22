@@ -20,8 +20,14 @@
     "author": "Velizar Mihaylov",
     "license": "ISC",
     "dependencies": {
+        "@material-ui/core": "^1.2.0",
+        "@material-ui/icons": "^1.1.0",
+        "d": "^1.0.0",
         "dotenv": "^5.0.0",
-        "spa-server": ""
+        "flow-bin": "^0.76.0",
+        "git": "^0.1.5",
+        "react-browser-logger": "https://github.com/Colour-Full/react-browser-logger.git",
+        "spa-server": "https://github.com/Colour-Full/koa-server.git"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
@@ -53,8 +59,7 @@
         "fetch": "^1.1.0",
         "fetch-mock": "^6.0.0",
         "file-loader": "^1.1.11",
-        "flow-bin": "^0.71.0",
-        "flow-typed": "^2.3.0",
+        "flow-typed": "^2.5.1",
         "http-status": "^1.1.0",
         "jest": "^22.1.4",
         "koa": "^2.5.1",
@@ -81,6 +86,7 @@
         "redux-form": "^7.3.0",
         "redux-logger": "^3.0.6",
         "redux-thunk": "^2.2.0",
+        "spa-webpack": "https://github.com/Colour-Full/spa-webpack.git",
         "styled-components": "^3.2.6",
         "styled-normalize": "^4.0.0",
         "url-join": "^4.0.0",

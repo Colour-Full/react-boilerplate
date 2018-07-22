@@ -1,0 +1,37 @@
+{
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-flow-comments",
+    "transform-object-rest-spread",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "src": "./src"
+        }
+      }
+    ]
+  ],
+  "presets": [
+    "react",
+    [
+      "env",
+      {
+        "targets": {
+          "browserlist": [
+            ">2%",
+            "last 2 versions"
+          ]
+        }
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "react",
+        "env"
+      ]
+    }
+  }
+}

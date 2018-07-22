@@ -1,8 +1,16 @@
+// @flow
+
 import { combineReducers } from 'redux'
-import getHelloWorld from './fetch_hello_world_reducer'
+import todoReducer, { type TodoList } from '../Todo/api-todo/reducers/todo'
+import visibilityReducers, { type VisibilityState } from '../Todo/api-todo/reducers/visibilityFilter'
 
-const rootReducer = combineReducers({
-  helloWorld: getHelloWorld
+export type AppState = {
+  todos: TodoList,
+  visibility: VisibilityState
+
+}
+
+export default combineReducers({
+  todos: todoReducer,
+  visibility: visibilityReducers
 })
-
-export default rootReducer

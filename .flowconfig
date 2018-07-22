@@ -1,0 +1,16 @@
+[libs]
+flow-typed
+
+[include]
+src/
+
+[ignore]
+.*/node_modules/.*
+.*/src/App/store.*
+
+[options]
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=src
+module.system.node.resolve_dirname=.
+
+[strict]
