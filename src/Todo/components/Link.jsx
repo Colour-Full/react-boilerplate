@@ -9,7 +9,7 @@ export type LinkProps = {
   onClick: (any) => void
 }
 
-const Link = ({ active, children, onClick }: LinkProps): Element<any> => (
+const Link = ({ active, children, onClick }: LinkProps): Element<'button'> => (
   <button
     onClick={onClick}
     disabled={active}

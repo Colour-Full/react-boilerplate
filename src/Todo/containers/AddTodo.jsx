@@ -10,7 +10,7 @@ type AddTodoProps = {
   dispatch: Dispatch<*>
 }
 
-const AddTodo = ({ dispatch }: AddTodoProps): Element<any> => {
+const AddTodo = ({ dispatch }: AddTodoProps): Element<'div'> => {
   let input: ?HTMLInputElement
 
   return (

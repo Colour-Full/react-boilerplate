@@ -21,11 +21,11 @@ const getVisibleTodos = (todos: any, filter: VisibilityState): TodoList | Error 
   }
 }
 
-type VisibleTodoMapStateToPropsType = {
+type VisibleTodosProp = {
   todos: TodoList | Error
 }
 
-const mapStateToProps = (state: AppState): VisibleTodoMapStateToPropsType => {
+const mapStateToProps = (state: AppState): VisibleTodosProp => {
   // we get the data we want from the state via the connectors
   // which may have been transformed into a specific structure
   // but not processed or filtered etc. That work is done here..
@@ -37,11 +37,11 @@ const mapStateToProps = (state: AppState): VisibleTodoMapStateToPropsType => {
   }
 }
 
-type VisibleTodoDispatchStateToPropsType = {
+type ToggleTodoProp = {
   toggleTodo: (id: number) => ToggleTodoAction
 }
 
-const mapDispatchToProps = (dispatch: Dispatch<*>): VisibleTodoDispatchStateToPropsType => ({
+const mapDispatchToProps = (dispatch: Dispatch<*>): ToggleTodoProp => ({
   toggleTodo: (id: number): ToggleTodoAction => dispatch(toggleTodo(id))
 })
 

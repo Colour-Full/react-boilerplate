@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react'
-import type Link from '../Link'
+import Link from '../Link'
 import Adapter from 'enzyme-adapter-react-16'
 import Enzyme, { shallow } from 'enzyme'
 import { shallowToJson } from 'enzyme-to-json'

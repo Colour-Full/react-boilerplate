@@ -4,7 +4,7 @@ import type { Element } from 'react'
 import FilterLink from '../containers/FilterLinks'
 import { VisibilityFilters } from '../api-todo/reducers/visibilityFilter'
 
-const Footer = (): Element<any> => (
+const Footer = (): Element<'div'> => (
   <div>
     <span>Show: </span>
     <FilterLink filter={VisibilityFilters.SHOW_ALL}>
