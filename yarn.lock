@@ -2,6 +2,120 @@
 # yarn lockfile v1
 
 
+"@atlaskit/analytics-next@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@atlaskit/analytics-next/-/analytics-next-3.0.1.tgz#1a0a8eb985bcaeca9a002b7ea7f7d3b5be9e9793"
+  dependencies:
+    prop-types "^15.5.10"
+
+"@atlaskit/button@^9.0.2":
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/@atlaskit/button/-/button-9.0.2.tgz#db3941222576c87246329366d319041e3478e39f"
+  dependencies:
+    "@atlaskit/analytics-next" "^3.0.1"
+    "@atlaskit/spinner" "9.0.2"
+    "@atlaskit/theme" "^5.0.0"
+    babel-runtime "^6.26.0"
+
+"@atlaskit/css-reset@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/css-reset/-/css-reset-3.0.0.tgz#118161050f4c389519518d66079c28adf7fe8ae7"
+  dependencies:
+    "@atlaskit/util-shared-styles" "^2.10.3"
+
+"@atlaskit/field-base@^11.0.0":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/field-base/-/field-base-11.0.0.tgz#12f208a192089cf0a834d1ee556dff08331f6665"
+  dependencies:
+    "@atlaskit/icon" "^13.0.0"
+    "@atlaskit/inline-dialog" "^8.0.0"
+    "@atlaskit/spinner" "^9.0.0"
+    "@atlaskit/theme" "^5.0.0"
+    babel-runtime "^6.26.0"
+
+"@atlaskit/field-text@^7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@atlaskit/field-text/-/field-text-7.0.1.tgz#a33cdfd9f0d9a7237ec80371f9da9621f64f2cc1"
+  dependencies:
+    "@atlaskit/analytics-next" "^3.0.1"
+    "@atlaskit/field-base" "^11.0.0"
+    "@atlaskit/theme" "^5.0.0"
+
+"@atlaskit/icon@^13.0.0":
+  version "13.2.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/icon/-/icon-13.2.0.tgz#1ca16a5555adee6aaaa361acfb5ef289577fbe8e"
+  dependencies:
+    "@atlaskit/theme" "^5.0.0"
+    babel-runtime "^6.26.0"
+    uuid "^3.1.0"
+
+"@atlaskit/inline-dialog@^8.0.0":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@atlaskit/inline-dialog/-/inline-dialog-8.0.1.tgz#2f7265bcd00b348df971cfd6e3f2a55cf66e3572"
+  dependencies:
+    "@atlaskit/analytics-next" "^3.0.1"
+    "@atlaskit/layer" "^5.0.0"
+    "@atlaskit/theme" "^5.0.0"
+
+"@atlaskit/inline-edit@^7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@atlaskit/inline-edit/-/inline-edit-7.0.1.tgz#4c925acff9aff7911048436e3caff0287b1a5d3c"
+  dependencies:
+    "@atlaskit/analytics-next" "^3.0.1"
+    "@atlaskit/button" "^9.0.2"
+    "@atlaskit/field-base" "^11.0.0"
+    "@atlaskit/icon" "^13.0.0"
+    "@atlaskit/theme" "^5.0.0"
+    classnames "^2.2.5"
+
+"@atlaskit/input@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/input/-/input-4.0.0.tgz#bc96b7d3af64f118d2745d562e3966a680ef2b44"
+  dependencies:
+    "@atlaskit/theme" "^5.0.0"
+    babel-runtime "^6.26.0"
+    keycode "^2.1.7"
+
+"@atlaskit/item@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@atlaskit/item/-/item-8.0.1.tgz#e934187b7e8803c45c4af5a87bb3da3711204141"
+  dependencies:
+    "@atlaskit/theme" "^5.0.0"
+    prop-types "^15.5.10"
+    react-addons-text-content "^0.0.4"
+    uuid "^3.1.0"
+
+"@atlaskit/layer@^5.0.0":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@atlaskit/layer/-/layer-5.0.1.tgz#7aad8d0898f842dee1a5cc15ea358bb5c6791f34"
+  dependencies:
+    raf-schd "^2.1.0"
+    react-scrolllock "^3.0.1"
+
+"@atlaskit/page@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/page/-/page-8.0.0.tgz#c37a8e90dd82106e9f99a1504500f253e8132342"
+
+"@atlaskit/spinner@9.0.2", "@atlaskit/spinner@^9.0.0":
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/@atlaskit/spinner/-/spinner-9.0.2.tgz#48fcac8a690b9fe3ae5b53afbd49216c8d87ce1c"
+  dependencies:
+    "@atlaskit/theme" "^5.0.0"
+    babel-runtime "^6.26.0"
+    react-transition-group "^2.2.1"
+
+"@atlaskit/theme@^5.0.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/theme/-/theme-5.1.0.tgz#9cad08612eb0363035835879c583478fb92c6329"
+  dependencies:
+    prop-types "^15.5.10"
+
+"@atlaskit/util-shared-styles@^2.10.3":
+  version "2.10.8"
+  resolved "https://registry.yarnpkg.com/@atlaskit/util-shared-styles/-/util-shared-styles-2.10.8.tgz#07fb6903cb749575c36a1d7e25f4638bbcf866f7"
+  dependencies:
+    babel-runtime "^6.11.6"
+
 "@babel/code-frame@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.44.tgz#2a02643368de80916162be70865c97774f3adbd9"
@@ -1415,7 +1529,7 @@ babel-register@^6.26.0, babel-register@^6.9.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@^6.18.0, babel-runtime@^6.2.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0, babel-runtime@^6.3.19, babel-runtime@^6.6.1:
+babel-runtime@^6.11.6, babel-runtime@^6.18.0, babel-runtime@^6.2.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0, babel-runtime@^6.3.19, babel-runtime@^6.6.1:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -3163,7 +3277,7 @@ execa@^0.7.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-exenv@^1.2.1:
+exenv@^1.2.1, exenv@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
 
@@ -5243,7 +5357,7 @@ jsx-ast-utils@^2.0.1:
   dependencies:
     array-includes "^3.0.3"
 
-keycode@^2.1.9:
+keycode@^2.1.7, keycode@^2.1.9:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/keycode/-/keycode-2.2.0.tgz#3d0af56dc7b8b8e5cba8d0a97f107204eec22b04"
 
@@ -6726,7 +6840,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.0.0, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@^15.0.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -6834,6 +6948,10 @@ querystring@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
 
+raf-schd@^2.1.0:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/raf-schd/-/raf-schd-2.1.2.tgz#ec622b5167f2912089f054dc03ebd5bcf33c8f62"
+
 raf@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.0.tgz#a28876881b4bc2ca9117d4138163ddb80f781575"
@@ -6908,6 +7026,10 @@ rc@^1.2.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
+
+react-addons-text-content@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/react-addons-text-content/-/react-addons-text-content-0.0.4.tgz#d2e259fdc951d1d8906c08902002108dce8792e5"
 
 react-base16-styling@^0.4.1:
   version "0.4.7"
@@ -7088,6 +7210,12 @@ react-router@^4.2.0, react-router@^4.3.1:
     path-to-regexp "^1.7.0"
     prop-types "^15.6.1"
     warning "^4.0.1"
+
+react-scrolllock@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-scrolllock/-/react-scrolllock-3.0.1.tgz#76955fef2de5bfba677166b36ce4eb28231b37a9"
+  dependencies:
+    exenv "^1.2.2"
 
 react-side-effect@^1.1.0:
   version "1.1.5"

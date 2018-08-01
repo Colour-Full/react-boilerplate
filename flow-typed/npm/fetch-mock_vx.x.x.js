@@ -1,4 +1,4 @@
-// flow-typed signature: 54a70e0ab48b465e895fbb2946441233
+// flow-typed signature: 29212cec0ed11c8c37dc7c4a1c497abb
 // flow-typed version: <<STUB>>/fetch-mock_v^6.0.0/flow_v0.76.0
 
 /**
@@ -22,7 +22,7 @@ declare module 'fetch-mock' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module 'fetch-mock/es5/client-bundle' {
+declare module 'fetch-mock/dist/es5/client-bundle' {
   declare module.exports: any;
 }
 
@@ -59,6 +59,10 @@ declare module 'fetch-mock/es5/lib/status-text' {
 }
 
 declare module 'fetch-mock/es5/server' {
+  declare module.exports: any;
+}
+
+declare module 'fetch-mock/scripts/support-fetch-mock' {
   declare module.exports: any;
 }
 
@@ -99,8 +103,8 @@ declare module 'fetch-mock/src/server' {
 }
 
 // Filename aliases
-declare module 'fetch-mock/es5/client-bundle.js' {
-  declare module.exports: $Exports<'fetch-mock/es5/client-bundle'>;
+declare module 'fetch-mock/dist/es5/client-bundle.js' {
+  declare module.exports: $Exports<'fetch-mock/dist/es5/client-bundle'>;
 }
 declare module 'fetch-mock/es5/client.js' {
   declare module.exports: $Exports<'fetch-mock/es5/client'>;
@@ -128,6 +132,9 @@ declare module 'fetch-mock/es5/lib/status-text.js' {
 }
 declare module 'fetch-mock/es5/server.js' {
   declare module.exports: $Exports<'fetch-mock/es5/server'>;
+}
+declare module 'fetch-mock/scripts/support-fetch-mock.js' {
+  declare module.exports: $Exports<'fetch-mock/scripts/support-fetch-mock'>;
 }
 declare module 'fetch-mock/src/client.js' {
   declare module.exports: $Exports<'fetch-mock/src/client'>;

@@ -1,5 +1,5 @@
-// flow-typed signature: c4e9eadc88831e6b5216764936f6edf7
-// flow-typed version: d5cdc48b6b/lodash-es_v4.x.x/flow_>=v0.63.x
+// flow-typed signature: 0db6828441367382d8b5ebd4ecdbb4a1
+// flow-typed version: 62c4485bdf/lodash-es_v4.x.x/flow_>=v0.63.x
 
 declare module "lodash-es" {
   declare type __CurriedFunction1<A, R, AA: A> = (...r: [AA]) => R;
@@ -1120,7 +1120,7 @@ declare module "lodash-es" {
   declare export function functionsIn(object?: ?Object): Array<string>;
   declare export function get(
     object?: ?Object | ?$ReadOnlyArray<any> | void | null,
-    path?: ?$ReadOnlyArray<string> | string,
+    path?: ?$ReadOnlyArray<string | number> | string | number,
     defaultValue?: any
   ): any;
   declare export function has(object: Object, path: Array<string> | string): boolean;

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList component Should render without throwing an error 1`] = `
+<WithTheme(AkGrid)>
+  <WithTheme(AkGridColumn)
+    medium={4}
+  >
+    <ItemGroup
+      role="group"
+    >
+      Now there is somthing to do
+      <Todo
+        completed={false}
+        key="0"
+        onClick={[MockFunction]}
+        text="First Thing To Do"
+      />
+      <Todo
+        completed={false}
+        key="1"
+        onClick={[MockFunction]}
+        text="Second Thing To Do"
+      />
+      <Todo
+        completed={false}
+        key="2"
+        onClick={[MockFunction]}
+        text="Third Thing To Do"
+      />
+    </ItemGroup>
+  </WithTheme(AkGridColumn)>
+</WithTheme(AkGrid)>
+`;

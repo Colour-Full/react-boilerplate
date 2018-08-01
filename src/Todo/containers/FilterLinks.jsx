@@ -17,8 +17,9 @@ type onClickProp = {
   onClick: () => void
 }
 
-const mapStateToProps = (state: AppState, ownProps: FilterProps): ActiveProp => {
+export const mapStateToProps = (state: AppState, ownProps: FilterProps): ActiveProp => {
   // We get the data we want via the connectors ...
+  console.log('Own Props', ownProps)
   const filter = getVisibilityFilterFromState(state)
 
   return {
@@ -26,7 +27,7 @@ const mapStateToProps = (state: AppState, ownProps: FilterProps): ActiveProp => 
   }
 }
 
-const mapDispatchToProps = (dispatch: Dispatch, ownProps: FilterProps): onClickProp => ({
+export const mapDispatchToProps = (dispatch: Dispatch, ownProps: FilterProps): onClickProp => ({
   onClick: () => { dispatch(setVisibilityFilter(ownProps.filter)) }
 })
 

@@ -1,4 +1,4 @@
-// flow-typed signature: 3a947dba2ab9f300b4a5ecc91ba7be87
+// flow-typed signature: e91bea756bbc6d996289815861b0bf19
 // flow-typed version: <<STUB>>/webpack_v^4.8.3/flow_v0.76.0
 
 /**
@@ -915,6 +915,18 @@ declare module 'webpack/lib/optimize/MinChunkSizePlugin' {
 }
 
 declare module 'webpack/lib/optimize/ModuleConcatenationPlugin' {
+  declare module.exports: any;
+}
+
+declare module 'webpack/lib/optimize/NaturalChunkOrderPlugin' {
+  declare module.exports: any;
+}
+
+declare module 'webpack/lib/optimize/OccurrenceChunkOrderPlugin' {
+  declare module.exports: any;
+}
+
+declare module 'webpack/lib/optimize/OccurrenceModuleOrderPlugin' {
   declare module.exports: any;
 }
 
@@ -1918,6 +1930,15 @@ declare module 'webpack/lib/optimize/MinChunkSizePlugin.js' {
 }
 declare module 'webpack/lib/optimize/ModuleConcatenationPlugin.js' {
   declare module.exports: $Exports<'webpack/lib/optimize/ModuleConcatenationPlugin'>;
+}
+declare module 'webpack/lib/optimize/NaturalChunkOrderPlugin.js' {
+  declare module.exports: $Exports<'webpack/lib/optimize/NaturalChunkOrderPlugin'>;
+}
+declare module 'webpack/lib/optimize/OccurrenceChunkOrderPlugin.js' {
+  declare module.exports: $Exports<'webpack/lib/optimize/OccurrenceChunkOrderPlugin'>;
+}
+declare module 'webpack/lib/optimize/OccurrenceModuleOrderPlugin.js' {
+  declare module.exports: $Exports<'webpack/lib/optimize/OccurrenceModuleOrderPlugin'>;
 }
 declare module 'webpack/lib/optimize/OccurrenceOrderPlugin.js' {
   declare module.exports: $Exports<'webpack/lib/optimize/OccurrenceOrderPlugin'>;

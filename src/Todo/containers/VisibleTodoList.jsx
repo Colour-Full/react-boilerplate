@@ -8,7 +8,7 @@ import { VisibilityFilters, type VisibilityState } from '../api-todo/reducers/vi
 import TodoListComponent from '../components/TodoList'
 import { type TodoList, type TodoTypeFromReducer } from '../api-todo/reducers/todo'
 
-const getVisibleTodos = (todos: any, filter: VisibilityState): TodoList | Error => {
+export const getVisibleTodos = (todos: TodoList, filter: VisibilityState): TodoList | Error => {
   switch (filter) {
     case VisibilityFilters.SHOW_ALL:
       return todos
@@ -25,7 +25,7 @@ type VisibleTodosProp = {
   todos: TodoList | Error
 }
 
-const mapStateToProps = (state: AppState): VisibleTodosProp => {
+export const mapStateToProps = (state: AppState): VisibleTodosProp => {
   // we get the data we want from the state via the connectors
   // which may have been transformed into a specific structure
   // but not processed or filtered etc. That work is done here..
@@ -41,7 +41,7 @@ type ToggleTodoProp = {
   toggleTodo: (id: number) => ToggleTodoAction
 }
 
-const mapDispatchToProps = (dispatch: Dispatch<*>): ToggleTodoProp => ({
+export const mapDispatchToProps = (dispatch: Dispatch<*>): ToggleTodoProp => ({
   toggleTodo: (id: number): ToggleTodoAction => dispatch(toggleTodo(id))
 })
 

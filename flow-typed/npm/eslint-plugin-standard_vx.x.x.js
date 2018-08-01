@@ -1,4 +1,4 @@
-// flow-typed signature: c35a09e6efb4c42822489c9b130acd75
+// flow-typed signature: 3d742ce860e4d69637cdb83726fb3a88
 // flow-typed version: <<STUB>>/eslint-plugin-standard_v^3.0.1/flow_v0.76.0
 
 /**
@@ -38,22 +38,6 @@ declare module 'eslint-plugin-standard/rules/object-curly-even-spacing' {
   declare module.exports: any;
 }
 
-declare module 'eslint-plugin-standard/tests/array-bracket-even-spacing' {
-  declare module.exports: any;
-}
-
-declare module 'eslint-plugin-standard/tests/computed-property-even-spacing' {
-  declare module.exports: any;
-}
-
-declare module 'eslint-plugin-standard/tests/no-callback-literal' {
-  declare module.exports: any;
-}
-
-declare module 'eslint-plugin-standard/tests/object-curly-even-spacing' {
-  declare module.exports: any;
-}
-
 // Filename aliases
 declare module 'eslint-plugin-standard/index' {
   declare module.exports: $Exports<'eslint-plugin-standard'>;
@@ -72,16 +56,4 @@ declare module 'eslint-plugin-standard/rules/no-callback-literal.js' {
 }
 declare module 'eslint-plugin-standard/rules/object-curly-even-spacing.js' {
   declare module.exports: $Exports<'eslint-plugin-standard/rules/object-curly-even-spacing'>;
-}
-declare module 'eslint-plugin-standard/tests/array-bracket-even-spacing.js' {
-  declare module.exports: $Exports<'eslint-plugin-standard/tests/array-bracket-even-spacing'>;
-}
-declare module 'eslint-plugin-standard/tests/computed-property-even-spacing.js' {
-  declare module.exports: $Exports<'eslint-plugin-standard/tests/computed-property-even-spacing'>;
-}
-declare module 'eslint-plugin-standard/tests/no-callback-literal.js' {
-  declare module.exports: $Exports<'eslint-plugin-standard/tests/no-callback-literal'>;
-}
-declare module 'eslint-plugin-standard/tests/object-curly-even-spacing.js' {
-  declare module.exports: $Exports<'eslint-plugin-standard/tests/object-curly-even-spacing'>;
 }

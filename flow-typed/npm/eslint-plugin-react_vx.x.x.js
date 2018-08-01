@@ -1,4 +1,4 @@
-// flow-typed signature: 25ea2cc61cee6392543167d6e6729c8e
+// flow-typed signature: c78aace2a8cbf03fbad08d1a3a671f3d
 // flow-typed version: <<STUB>>/eslint-plugin-react_v^7.6.1/flow_v0.76.0
 
 /**
@@ -114,6 +114,10 @@ declare module 'eslint-plugin-react/lib/rules/jsx-key' {
   declare module.exports: any;
 }
 
+declare module 'eslint-plugin-react/lib/rules/jsx-max-depth' {
+  declare module.exports: any;
+}
+
 declare module 'eslint-plugin-react/lib/rules/jsx-max-props-per-line' {
   declare module.exports: any;
 }
@@ -147,6 +151,10 @@ declare module 'eslint-plugin-react/lib/rules/jsx-one-expression-per-line' {
 }
 
 declare module 'eslint-plugin-react/lib/rules/jsx-pascal-case' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-react/lib/rules/jsx-props-no-multi-spaces' {
   declare module.exports: any;
 }
 
@@ -255,6 +263,10 @@ declare module 'eslint-plugin-react/lib/rules/no-unescaped-entities' {
 }
 
 declare module 'eslint-plugin-react/lib/rules/no-unknown-property' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-react/lib/rules/no-unsafe' {
   declare module.exports: any;
 }
 
@@ -434,6 +446,9 @@ declare module 'eslint-plugin-react/lib/rules/jsx-indent.js' {
 declare module 'eslint-plugin-react/lib/rules/jsx-key.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-key'>;
 }
+declare module 'eslint-plugin-react/lib/rules/jsx-max-depth.js' {
+  declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-max-depth'>;
+}
 declare module 'eslint-plugin-react/lib/rules/jsx-max-props-per-line.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-max-props-per-line'>;
 }
@@ -460,6 +475,9 @@ declare module 'eslint-plugin-react/lib/rules/jsx-one-expression-per-line.js' {
 }
 declare module 'eslint-plugin-react/lib/rules/jsx-pascal-case.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-pascal-case'>;
+}
+declare module 'eslint-plugin-react/lib/rules/jsx-props-no-multi-spaces.js' {
+  declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-props-no-multi-spaces'>;
 }
 declare module 'eslint-plugin-react/lib/rules/jsx-sort-default-props.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-sort-default-props'>;
@@ -541,6 +559,9 @@ declare module 'eslint-plugin-react/lib/rules/no-unescaped-entities.js' {
 }
 declare module 'eslint-plugin-react/lib/rules/no-unknown-property.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/no-unknown-property'>;
+}
+declare module 'eslint-plugin-react/lib/rules/no-unsafe.js' {
+  declare module.exports: $Exports<'eslint-plugin-react/lib/rules/no-unsafe'>;
 }
 declare module 'eslint-plugin-react/lib/rules/no-unused-prop-types.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/no-unused-prop-types'>;

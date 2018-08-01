@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react'
 import type { Element } from 'react'
+import Item from '@atlaskit/item'
 
 export type TodoProps = {
   onClick: () => void,
@@ -8,15 +9,16 @@ export type TodoProps = {
   text: string
 }
 
-const Todo = ({onClick, completed, text}: TodoProps): Element<'li'> => (
-  <li
+const Todo = ({onClick, completed, text}: TodoProps): Element<any> => (
+  <Item
+    isCompact
     onClick={onClick}
     style={{
       textDecoration: completed ? 'line-through' : 'none'
     }}
   >
     {text}
-  </li>
+  </Item>
 )
 
 export default Todo

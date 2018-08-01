@@ -1,4 +1,4 @@
-// flow-typed signature: 7f7d2d0e7aafd96a9b8f46765529a43a
+// flow-typed signature: 60f99895145c94f40260cf66c81f1e18
 // flow-typed version: <<STUB>>/puppeteer_v^1.0.0/flow_v0.76.0
 
 /**
@@ -26,43 +26,15 @@ declare module 'puppeteer/DeviceDescriptors' {
   declare module.exports: any;
 }
 
-declare module 'puppeteer/examples/block-images' {
-  declare module.exports: any;
-}
-
-declare module 'puppeteer/examples/custom-event' {
-  declare module.exports: any;
-}
-
-declare module 'puppeteer/examples/detect-sniff' {
-  declare module.exports: any;
-}
-
-declare module 'puppeteer/examples/pdf' {
-  declare module.exports: any;
-}
-
-declare module 'puppeteer/examples/proxy' {
-  declare module.exports: any;
-}
-
-declare module 'puppeteer/examples/screenshot-fullpage' {
-  declare module.exports: any;
-}
-
-declare module 'puppeteer/examples/screenshot' {
-  declare module.exports: any;
-}
-
-declare module 'puppeteer/examples/search' {
-  declare module.exports: any;
-}
-
 declare module 'puppeteer/install' {
   declare module.exports: any;
 }
 
 declare module 'puppeteer/lib/Browser' {
+  declare module.exports: any;
+}
+
+declare module 'puppeteer/lib/BrowserFetcher' {
   declare module.exports: any;
 }
 
@@ -75,10 +47,6 @@ declare module 'puppeteer/lib/Coverage' {
 }
 
 declare module 'puppeteer/lib/Dialog' {
-  declare module.exports: any;
-}
-
-declare module 'puppeteer/lib/Downloader' {
   declare module.exports: any;
 }
 
@@ -126,7 +94,19 @@ declare module 'puppeteer/lib/Page' {
   declare module.exports: any;
 }
 
+declare module 'puppeteer/lib/Pipe' {
+  declare module.exports: any;
+}
+
 declare module 'puppeteer/lib/Puppeteer' {
+  declare module.exports: any;
+}
+
+declare module 'puppeteer/lib/Target' {
+  declare module.exports: any;
+}
+
+declare module 'puppeteer/lib/TaskQueue' {
   declare module.exports: any;
 }
 
@@ -138,7 +118,15 @@ declare module 'puppeteer/lib/USKeyboardLayout' {
   declare module.exports: any;
 }
 
+declare module 'puppeteer/lib/Worker' {
+  declare module.exports: any;
+}
+
 declare module 'puppeteer/node6/lib/Browser' {
+  declare module.exports: any;
+}
+
+declare module 'puppeteer/node6/lib/BrowserFetcher' {
   declare module.exports: any;
 }
 
@@ -151,10 +139,6 @@ declare module 'puppeteer/node6/lib/Coverage' {
 }
 
 declare module 'puppeteer/node6/lib/Dialog' {
-  declare module.exports: any;
-}
-
-declare module 'puppeteer/node6/lib/Downloader' {
   declare module.exports: any;
 }
 
@@ -202,7 +186,19 @@ declare module 'puppeteer/node6/lib/Page' {
   declare module.exports: any;
 }
 
+declare module 'puppeteer/node6/lib/Pipe' {
+  declare module.exports: any;
+}
+
 declare module 'puppeteer/node6/lib/Puppeteer' {
+  declare module.exports: any;
+}
+
+declare module 'puppeteer/node6/lib/Target' {
+  declare module.exports: any;
+}
+
+declare module 'puppeteer/node6/lib/TaskQueue' {
   declare module.exports: any;
 }
 
@@ -214,33 +210,13 @@ declare module 'puppeteer/node6/lib/USKeyboardLayout' {
   declare module.exports: any;
 }
 
+declare module 'puppeteer/node6/lib/Worker' {
+  declare module.exports: any;
+}
+
 // Filename aliases
 declare module 'puppeteer/DeviceDescriptors.js' {
   declare module.exports: $Exports<'puppeteer/DeviceDescriptors'>;
-}
-declare module 'puppeteer/examples/block-images.js' {
-  declare module.exports: $Exports<'puppeteer/examples/block-images'>;
-}
-declare module 'puppeteer/examples/custom-event.js' {
-  declare module.exports: $Exports<'puppeteer/examples/custom-event'>;
-}
-declare module 'puppeteer/examples/detect-sniff.js' {
-  declare module.exports: $Exports<'puppeteer/examples/detect-sniff'>;
-}
-declare module 'puppeteer/examples/pdf.js' {
-  declare module.exports: $Exports<'puppeteer/examples/pdf'>;
-}
-declare module 'puppeteer/examples/proxy.js' {
-  declare module.exports: $Exports<'puppeteer/examples/proxy'>;
-}
-declare module 'puppeteer/examples/screenshot-fullpage.js' {
-  declare module.exports: $Exports<'puppeteer/examples/screenshot-fullpage'>;
-}
-declare module 'puppeteer/examples/screenshot.js' {
-  declare module.exports: $Exports<'puppeteer/examples/screenshot'>;
-}
-declare module 'puppeteer/examples/search.js' {
-  declare module.exports: $Exports<'puppeteer/examples/search'>;
 }
 declare module 'puppeteer/index' {
   declare module.exports: $Exports<'puppeteer'>;
@@ -254,6 +230,9 @@ declare module 'puppeteer/install.js' {
 declare module 'puppeteer/lib/Browser.js' {
   declare module.exports: $Exports<'puppeteer/lib/Browser'>;
 }
+declare module 'puppeteer/lib/BrowserFetcher.js' {
+  declare module.exports: $Exports<'puppeteer/lib/BrowserFetcher'>;
+}
 declare module 'puppeteer/lib/Connection.js' {
   declare module.exports: $Exports<'puppeteer/lib/Connection'>;
 }
@@ -262,9 +241,6 @@ declare module 'puppeteer/lib/Coverage.js' {
 }
 declare module 'puppeteer/lib/Dialog.js' {
   declare module.exports: $Exports<'puppeteer/lib/Dialog'>;
-}
-declare module 'puppeteer/lib/Downloader.js' {
-  declare module.exports: $Exports<'puppeteer/lib/Downloader'>;
 }
 declare module 'puppeteer/lib/ElementHandle.js' {
   declare module.exports: $Exports<'puppeteer/lib/ElementHandle'>;
@@ -299,8 +275,17 @@ declare module 'puppeteer/lib/NetworkManager.js' {
 declare module 'puppeteer/lib/Page.js' {
   declare module.exports: $Exports<'puppeteer/lib/Page'>;
 }
+declare module 'puppeteer/lib/Pipe.js' {
+  declare module.exports: $Exports<'puppeteer/lib/Pipe'>;
+}
 declare module 'puppeteer/lib/Puppeteer.js' {
   declare module.exports: $Exports<'puppeteer/lib/Puppeteer'>;
+}
+declare module 'puppeteer/lib/Target.js' {
+  declare module.exports: $Exports<'puppeteer/lib/Target'>;
+}
+declare module 'puppeteer/lib/TaskQueue.js' {
+  declare module.exports: $Exports<'puppeteer/lib/TaskQueue'>;
 }
 declare module 'puppeteer/lib/Tracing.js' {
   declare module.exports: $Exports<'puppeteer/lib/Tracing'>;
@@ -308,8 +293,14 @@ declare module 'puppeteer/lib/Tracing.js' {
 declare module 'puppeteer/lib/USKeyboardLayout.js' {
   declare module.exports: $Exports<'puppeteer/lib/USKeyboardLayout'>;
 }
+declare module 'puppeteer/lib/Worker.js' {
+  declare module.exports: $Exports<'puppeteer/lib/Worker'>;
+}
 declare module 'puppeteer/node6/lib/Browser.js' {
   declare module.exports: $Exports<'puppeteer/node6/lib/Browser'>;
+}
+declare module 'puppeteer/node6/lib/BrowserFetcher.js' {
+  declare module.exports: $Exports<'puppeteer/node6/lib/BrowserFetcher'>;
 }
 declare module 'puppeteer/node6/lib/Connection.js' {
   declare module.exports: $Exports<'puppeteer/node6/lib/Connection'>;
@@ -319,9 +310,6 @@ declare module 'puppeteer/node6/lib/Coverage.js' {
 }
 declare module 'puppeteer/node6/lib/Dialog.js' {
   declare module.exports: $Exports<'puppeteer/node6/lib/Dialog'>;
-}
-declare module 'puppeteer/node6/lib/Downloader.js' {
-  declare module.exports: $Exports<'puppeteer/node6/lib/Downloader'>;
 }
 declare module 'puppeteer/node6/lib/ElementHandle.js' {
   declare module.exports: $Exports<'puppeteer/node6/lib/ElementHandle'>;
@@ -356,12 +344,24 @@ declare module 'puppeteer/node6/lib/NetworkManager.js' {
 declare module 'puppeteer/node6/lib/Page.js' {
   declare module.exports: $Exports<'puppeteer/node6/lib/Page'>;
 }
+declare module 'puppeteer/node6/lib/Pipe.js' {
+  declare module.exports: $Exports<'puppeteer/node6/lib/Pipe'>;
+}
 declare module 'puppeteer/node6/lib/Puppeteer.js' {
   declare module.exports: $Exports<'puppeteer/node6/lib/Puppeteer'>;
+}
+declare module 'puppeteer/node6/lib/Target.js' {
+  declare module.exports: $Exports<'puppeteer/node6/lib/Target'>;
+}
+declare module 'puppeteer/node6/lib/TaskQueue.js' {
+  declare module.exports: $Exports<'puppeteer/node6/lib/TaskQueue'>;
 }
 declare module 'puppeteer/node6/lib/Tracing.js' {
   declare module.exports: $Exports<'puppeteer/node6/lib/Tracing'>;
 }
 declare module 'puppeteer/node6/lib/USKeyboardLayout.js' {
   declare module.exports: $Exports<'puppeteer/node6/lib/USKeyboardLayout'>;
+}
+declare module 'puppeteer/node6/lib/Worker.js' {
+  declare module.exports: $Exports<'puppeteer/node6/lib/Worker'>;
 }

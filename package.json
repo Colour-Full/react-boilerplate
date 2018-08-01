@@ -20,6 +20,12 @@
     "author": "Velizar Mihaylov",
     "license": "ISC",
     "dependencies": {
+        "@atlaskit/button": "^9.0.2",
+        "@atlaskit/css-reset": "^3.0.0",
+        "@atlaskit/inline-edit": "^7.0.1",
+        "@atlaskit/input": "^4.0.0",
+        "@atlaskit/item": "^8.0.1",
+        "@atlaskit/page": "^8.0.0",
         "@material-ui/core": "^1.2.0",
         "@material-ui/icons": "^1.1.0",
         "d": "^1.0.0",
@@ -30,6 +36,7 @@
         "spa-server": "https://github.com/Colour-Full/koa-server.git"
     },
     "devDependencies": {
+        "@atlaskit/field-text": "^7.0.1",
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.0",
         "babel-eslint": "^8.2.1",

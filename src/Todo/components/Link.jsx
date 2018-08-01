@@ -1,24 +1,24 @@
 // @flow
 
-import * as React from 'react'
-import type { Element } from 'react'
+import React, {type Element, type ChildrenArray} from 'react'
+import Button from '@atlaskit/button'
 
 export type LinkProps = {
   active: boolean,
-  children: React.ChildrenArray<string>,
+  children: ChildrenArray<string>,
   onClick: (any) => void
 }
 
-const Link = ({ active, children, onClick }: LinkProps): Element<'button'> => (
-  <button
+const Link = ({ active, children, onClick }: LinkProps): Element<any> => (
+  <Button
     onClick={onClick}
-    disabled={active}
+    isSelected={active}
     style={{
       marginLeft: '4px'
     }}
   >
     {children}
-  </button>
+  </Button>
 )
 
 export default Link

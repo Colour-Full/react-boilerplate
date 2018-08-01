@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A VisibleTodoList container getVisibleTodos should handle SHOW_ACTIVE filter 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 1,
+    "text": "Second Thing To Do",
+  },
+  Object {
+    "completed": false,
+    "id": 2,
+    "text": "Third Thing To Do",
+  },
+]
+`;
+
+exports[`A VisibleTodoList container getVisibleTodos should handle SHOW_ALL filter 1`] = `
+Array [
+  Object {
+    "completed": true,
+    "id": 0,
+    "text": "First Thing To Do",
+  },
+  Object {
+    "completed": false,
+    "id": 1,
+    "text": "Second Thing To Do",
+  },
+  Object {
+    "completed": false,
+    "id": 2,
+    "text": "Third Thing To Do",
+  },
+]
+`;
+
+exports[`A VisibleTodoList container getVisibleTodos should handle SHOW_COMPLETED filter 1`] = `
+Array [
+  Object {
+    "completed": true,
+    "id": 0,
+    "text": "First Thing To Do",
+  },
+]
+`;
+
+exports[`A VisibleTodoList container mapStateToProps should return all todos prop when called with state with visibility set to \`SHOW_ALL\` 1`] = `
+Object {
+  "todos": Array [
+    Object {
+      "completed": true,
+      "id": 0,
+      "text": "First Thing To Do",
+    },
+    Object {
+      "completed": false,
+      "id": 1,
+      "text": "Second Thing To Do",
+    },
+    Object {
+      "completed": false,
+      "id": 2,
+      "text": "Third Thing To Do",
+    },
+  ],
+}
+`;
+
+exports[`A VisibleTodoList container mapStateToProps should return all todos prop when called with state with visibility set to \`SHOW_ALL\` 2`] = `
+Object {
+  "todos": Array [
+    Object {
+      "completed": true,
+      "id": 0,
+      "text": "First Thing To Do",
+    },
+    Object {
+      "completed": false,
+      "id": 1,
+      "text": "Second Thing To Do",
+    },
+    Object {
+      "completed": false,
+      "id": 2,
+      "text": "Third Thing To Do",
+    },
+  ],
+}
+`;
+
+exports[`A VisibleTodoList container mapStateToProps should return todos prop containing \`all todos\` when called with state with visibility set to \`SHOW_ACTIVE\` 1`] = `
+Object {
+  "todos": Array [
+    Object {
+      "completed": true,
+      "id": 0,
+      "text": "First Thing To Do",
+    },
+    Object {
+      "completed": false,
+      "id": 1,
+      "text": "Second Thing To Do",
+    },
+    Object {
+      "completed": false,
+      "id": 2,
+      "text": "Third Thing To Do",
+    },
+  ],
+}
+`;
+
+exports[`A VisibleTodoList container mapStateToProps should return todos prop containing only \`active todos\` when called with state with visibility set to \`SHOW_ACTIVE\` 1`] = `
+Object {
+  "todos": Array [
+    Object {
+      "completed": false,
+      "id": 1,
+      "text": "Second Thing To Do",
+    },
+    Object {
+      "completed": false,
+      "id": 2,
+      "text": "Third Thing To Do",
+    },
+  ],
+}
+`;
+
+exports[`A VisibleTodoList container mapStateToProps should return todos prop containing only \`completed todos\` when called with state with visibility set to \`SHOW_COMPLETED\` 1`] = `
+Object {
+  "todos": Array [
+    Object {
+      "completed": true,
+      "id": 0,
+      "text": "First Thing To Do",
+    },
+  ],
+}
+`;
