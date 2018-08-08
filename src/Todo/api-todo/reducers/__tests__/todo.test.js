@@ -1,5 +1,3 @@
-// @flow
-
 import todoReducer from '../todo'
 
 describe('A todo reducer ', () => {

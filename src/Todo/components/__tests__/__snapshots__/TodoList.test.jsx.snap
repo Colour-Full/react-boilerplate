@@ -8,23 +8,22 @@ exports[`TodoList component Should render without throwing an error 1`] = `
     <ItemGroup
       role="group"
     >
-      Now there is somthing to do
       <Todo
         completed={false}
         key="0"
-        onClick={[MockFunction]}
+        onClick={[Function]}
         text="First Thing To Do"
       />
       <Todo
         completed={false}
         key="1"
-        onClick={[MockFunction]}
+        onClick={[Function]}
         text="Second Thing To Do"
       />
       <Todo
         completed={false}
         key="2"
-        onClick={[MockFunction]}
+        onClick={[Function]}
         text="Third Thing To Do"
       />
     </ItemGroup>

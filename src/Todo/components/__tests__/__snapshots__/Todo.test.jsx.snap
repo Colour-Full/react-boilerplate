@@ -1,12 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`A Link Component  It should render without throwing an error  1`] = `
+exports[`A Todo Component  It should render without throwing an error  1`] = `
 <Item
   autoFocus={false}
   description=""
   isCompact={true}
   isDisabled={false}
   isHidden={false}
+  onClick={[MockFunction]}
   role="button"
   shouldAllowMultiline={false}
   style={
@@ -14,5 +15,7 @@ exports[`A Link Component  It should render without throwing an error  1`] = `
       "textDecoration": "none",
     }
   }
-/>
+>
+  To do
+</Item>
 `;

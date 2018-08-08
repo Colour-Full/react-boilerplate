@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTodo component Should render without throwing an error 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <WithTheme(AkGrid)>
+    <WithTheme(AkGridColumn)
+      medium={4}
+    >
+      <FieldText
+        isLabelHidden={true}
+        onChange={[Function]}
+        shouldFitContainer={true}
+        type="text"
+        value=""
+      />
+    </WithTheme(AkGridColumn)>
+    <WithTheme(AkGridColumn)
+      medium={4}
+    >
+      <ForwardRef(WithAnalyticsContext(WithAnalyticsEvents(WithDeprecationWarnings(Button))))
+        appearance="primary"
+        type="submit"
+      >
+        Add To Do
+      </ForwardRef(WithAnalyticsContext(WithAnalyticsEvents(WithDeprecationWarnings(Button))))>
+    </WithTheme(AkGridColumn)>
+  </WithTheme(AkGrid)>
+</form>
+`;

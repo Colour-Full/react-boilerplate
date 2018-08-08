@@ -1,4 +1,3 @@
-// @flow
 import React from 'react'
 import TodoList from '../TodoList'
 import Adapter from 'enzyme-adapter-react-16'

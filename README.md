@@ -1,64 +1,33 @@
-## Technologies used
+## React Boilerplate
 
-Unit Testing: Jest for snapshots Enzyme for shallow rendering. Start with 'npm run test:module'   
+This is a react-redux boilerplate for building SPA's. The boilerplate is aimed at building the client side part of micro services or the front end of a headless CMS.
 
-Integration testing: Puppeteer running on it's on or as part of Jest and Enzyme test. Start with 'npm run test:integration'
+The boilerplate provides all the tools necessary for bundling your code, type checking, setting up a server, unit integration and end to end testing.
 
-Run all tests: 'npm test'
+## Bundling - Webpack
 
-Http calls: 
-* use fetch. 
-* Mock `fetch` calls for integration testing. Investigate declarative file based api responses.
-* generate correlation ID and include as X-Request-Id header
+The boilerplate uses the `spa-webpack` module for setting up and configure webpack. Checkout the module repo for more information.
 
-Type checking: Flow - integrated as part of the webpack build script. If there are any errors the bundle will not compile
+To generate the webpack config files just run `yarn setup-webpack-config`
 
-Linting: eslint2016 - also integrated as part of the webpack build script, linting errors will not allow the bundle to be compiled. At the moment we are using the 'JavaScript Standard Style' (https://standardjs.com/) with the additional rule to allow only const.
+### Why we are using a separate module instead of providing Webpack as part of the boilerplate?
 
-Code style: flow type annotations, eslint, single quotes, indent 2 spaces, import not require,
-await async, no promise chains. Prefer es6 syntax.
+The   main reason is consistency. If you are working on multiple projects/services simultaneously you want to have the same version of Webpack and it's plugins across all of them. Saving time by not worrying about configuring Webpack every single time, also helps.
 
-config for vscode belongs here. The below will replace tabs with spaces, add emmet support for jsx and flow support after the installation of the Flow Language plugin:
+### My project needs a specific plugin that is not provided as part of the webpack module
 
-```
-{
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": true,
-    "emmet.syntaxProfiles": {
-    "javascript": "jsx"
-    },
-    "emmet.showSuggestionsAsSnippets": true,
-    "flow.useNPMPackagedFlow": true,
-    "javascript.validate.enable": false,
-}
-```
+That's fine you are free to modify/update the webpack config if needed. Just make sure to document any differences with the `spa-webpack` module. If you need those updated across multiple projects, I will suggest to clone the `spa-webpack` module and make your own updated version of it.
 
-Module aliasing: this is currently implemented both as part of webapck with the resolve.alias setting and natively in babel. We need to updated the setting in both webpack.config and babelrc to make sure we are getting similar results when building with webapck and through babel-cli. For now we are using only webpack but I am keeping the setup identical for babel if we decide to do some compiling through the babel-cli as well for some reason.
+### I dont like/want to use the spa-webpack module
 
-Logging: Looking at Winston with integration for Kibana
+No offense take, everyone needs are different so if you dont want to use the module you are free to not do it. The configuration provided by the module is pretty standard so you should be able to still use the boilerplate as long as your custom configuration matches the paths used.
 
-Env variable based configuration to configure web server. e.g. configurable web
-service end points to hit different envrionments: dev, test, train, production, staging, ...
-
-babel-env-preset: currently set to support last 2 versions of all browsers with more than 2% market share
-
-styling technology: need to investigate: react-jss, styled-components, ... ?
-
-rullion common ui: styles, themes, components, layouts, ...
-
-we need a README.md to give new users documentation, links to tools
-
-Dockerfile
-ste to do
-
-Jenkinsfile
-ste to do
+## Server - koa.js
 
 
 
-export default is the public API for module. Named exports for private methods for automated testing.
 
-Components should normally be data containers or ui components.
 
-investigate flux implementation (redux, rx-js, good support for async actions)
+
+
+

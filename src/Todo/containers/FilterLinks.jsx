@@ -19,7 +19,6 @@ type onClickProp = {
 
 export const mapStateToProps = (state: AppState, ownProps: FilterProps): ActiveProp => {
   // We get the data we want via the connectors ...
-  console.log('Own Props', ownProps)
   const filter = getVisibilityFilterFromState(state)
 
   return {

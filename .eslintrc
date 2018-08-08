@@ -85,5 +85,10 @@
   "globals": {
     "fetch": true,
     "Headers": true
-  }
+  },
+    "settings": {
+      "flowtype": {
+        "onlyFilesWithFlowAnnotation": true
+      }
+    }
 }

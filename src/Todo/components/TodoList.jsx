@@ -7,20 +7,19 @@ import { Grid, GridColumn } from '@atlaskit/page'
 
 export type TodoListProps = {
   todos: Array<TodoTypeFromReducer>,
-  toggleTodo: () => any
+  toggleTodo: (number) => any
 }
 
 const TodoList = ({ todos, toggleTodo }: TodoListProps): Element<any> => (
   <Grid>
     <GridColumn medium={4}>
       <ItemGroup>
-        {todos.length === 0 ? 'You have nothing to do' : 'Now there is somthing to do'}
         {todos.map((todo: TodoTypeFromReducer): Element<any> =>
           <Todo
             key={todo.id}
             completed={todo.completed}
             text={todo.text}
-            onClick={toggleTodo}
+            onClick={(): Object => toggleTodo(todo.id)}
           />
         )}
       </ItemGroup>

@@ -1,5 +1,3 @@
-// @flow
-
 import { setVisibilityFilter } from '../setVisibilityFilter'
 
 describe('A setVisibilityFilter action ', () => {

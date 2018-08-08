@@ -4,7 +4,7 @@ import type { Element } from 'react'
 import Item from '@atlaskit/item'
 
 export type TodoProps = {
-  onClick: () => void,
+  onClick: () => any,
   completed: boolean,
   text: string
 }

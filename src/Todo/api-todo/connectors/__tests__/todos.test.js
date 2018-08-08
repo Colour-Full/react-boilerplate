@@ -1,5 +1,3 @@
-// @flow
-
 import { getTodoListFromState,
   getVisibilityFilterFromState } from '../todos'
 

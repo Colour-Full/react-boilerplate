@@ -1,11 +1,9 @@
-// @flow
-
 import React from 'react'
 import Link from '../Link'
 import Adapter from 'enzyme-adapter-react-16'
 import Enzyme, { shallow } from 'enzyme'
 import { shallowToJson } from 'enzyme-to-json'
-import Button from '@material-ui/core/Button'
+import Button from '@atlaskit/button'
 
 Enzyme.configure({ adapter: new Adapter() })
 

@@ -1,6 +1,4 @@
-// @flow
 import { getVisibleTodos, mapStateToProps, mapDispatchToProps } from '../VisibleTodoList'
-import { type ToggleTodoAction } from '../../api-todo/actions/toggleTodo'
 
 describe('A VisibleTodoList container', () => {
   it('Should have getVisibleTodos defined', () => {
@@ -131,7 +129,7 @@ describe('A VisibleTodoList container', () => {
     const dispatch = jest.fn()
     const toggleTodo = jest.fn()
     const result = {
-      toggleTodo: (id: number): ToggleTodoAction => dispatch(toggleTodo(id))
+      toggleTodo: (id) => dispatch(toggleTodo(id))
     }
     expect(JSON.stringify(mapDispatchToProps(dispatch))).toEqual(JSON.stringify(result))
   })

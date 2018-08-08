@@ -1,4 +1,3 @@
-// @flow
 import { mapStateToProps, mapDispatchToProps } from '../FilterLinks'
 
 describe('FilterLinks component', () => {

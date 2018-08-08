@@ -1,5 +1,3 @@
-// @flow
-
 import { toggleTodo } from '../toggleTodo'
 
 describe('A toggle todo action ', () => {

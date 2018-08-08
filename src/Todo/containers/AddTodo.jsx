@@ -31,6 +31,8 @@ export class AddTodo extends Component<AddTodoProps, State> {
   /*:: handleSubmit: (SyntheticEvent<HTMLFormElement>) => void */
   handleSubmit (event: SyntheticEvent<HTMLFormElement>) {
     event.preventDefault()
+    if (!this.state.value.trim()) return
+
     this.props.addTodo(this.state.value)
   }
 

@@ -1,5 +1,3 @@
-// @flow
-
 import visibilityReducers from '../visibilityFilter'
 
 describe('A visibilityReducers reducer ', () => {

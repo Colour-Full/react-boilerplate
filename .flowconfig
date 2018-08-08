@@ -5,11 +5,14 @@ flow-typed
 src/
 
 [ignore]
+.*/__tests__/.*
+.*/end-to-end-tests/.*
 .*/node_modules/.*
 .*/src/App/store.*
 
 [options]
 module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=e2e
 module.system.node.resolve_dirname=src
 module.system.node.resolve_dirname=.
 

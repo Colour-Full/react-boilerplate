@@ -1,5 +1,3 @@
-// @flow
-
 import React from 'react'
 import Footer from '../Footer'
 import Adapter from 'enzyme-adapter-react-16'
