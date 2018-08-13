@@ -12,4 +12,4 @@ COPY . /src/app
 
 EXPOSE 3000
 
-CMD [ "npm", "start" ]g
+CMD [ "npm", "start" ]
