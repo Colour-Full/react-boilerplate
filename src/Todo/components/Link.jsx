@@ -14,7 +14,7 @@ const Link = ({ active, children, onClick }: LinkProps): Element<any> => (
     onClick={onClick}
     isSelected={active}
     style={{
-      padding: '25px'
+      marginLeft: '4px'
     }}
   >
     {children}

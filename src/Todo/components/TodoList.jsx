@@ -1,7 +1,7 @@
 // @flow
 import React, { type Element } from 'react'
 import { type TodoTypeFromReducer } from '../api-todo/reducers/todo'
-import Todo from './ToDo'
+import Todo from './Todo'
 import { ItemGroup } from '@atlaskit/item'
 import { Grid, GridColumn } from '@atlaskit/page'
 

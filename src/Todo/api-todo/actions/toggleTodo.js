@@ -7,7 +7,6 @@ export type ToggleTodoAction = {
 }
 
 export const toggleTodo = (id: number): ToggleTodoAction => {
-  console.log('Toggle Todo ID ', id)
   return {
     type: TOGGLE_TODO,
     id

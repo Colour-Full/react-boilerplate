@@ -27,7 +27,7 @@ if (module.hot) {
   })
 }
 
-// Open DevTools in new window you need pop ups allowed in Chrome for this to work
+// You need pop ups allowed in Chrome for Redux Dev Tools to open
 if (process.env.OPEN_REDUX_DEV_TOOLS === 'true') {
   const showDevTools = require('src/DevTools').default
   showDevTools(store)
