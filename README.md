@@ -20,7 +20,7 @@ yarn start
 This will start the server. By default the server is set to run in non hod-modules-reload mode. For development you will need to set the `HOT_MODULES=true` global environment. You can do that in the env.server file or directly from the command line:
 
 ```sh
-yarn HOT_MODULES=true yarn start
+HOT_MODULES=true yarn start
 ```
 
 ## Bundling - Webpack
