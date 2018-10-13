@@ -7,6 +7,7 @@ import { type AppState } from 'src/reducers'
 import { VisibilityFilters, type VisibilityState } from '../api-todo/reducers/visibilityFilter'
 import TodoListComponent from '../components/TodoList'
 import { type TodoList, type TodoTypeFromReducer } from '../api-todo/reducers/todo'
+import { fetchTodos } from '../api-todo/actions/fetchTodos'
 
 export const getVisibleTodos = (todos: TodoList, filter: VisibilityState): TodoList | Error => {
   switch (filter) {
@@ -22,27 +23,32 @@ export const getVisibleTodos = (todos: TodoList, filter: VisibilityState): TodoL
 }
 
 type VisibleTodosProp = {
-  todos: TodoList | Error
+  todos: TodoList | Error,
+  serviceUnavailable: boolean
 }
 
 export const mapStateToProps = (state: AppState): VisibleTodosProp => {
   // we get the data we want from the state via the connectors
   // which may have been transformed into a specific structure
   // but not processed or filtered etc. That work is done here..
+
   const todos = getTodoListFromState(state)
   const filter = getVisibilityFilterFromState(state)
 
   return {
-    todos: getVisibleTodos(todos, filter)
+    todos: getVisibleTodos(todos, filter),
+    serviceUnavailable: state.errors.serviceUnavailable
   }
 }
 
 type ToggleTodoProp = {
-  toggleTodo: (id: number) => ToggleTodoAction
+  toggleTodo: (id: number) => ToggleTodoAction,
+  fetchTodos: (any) => any
 }
 
 export const mapDispatchToProps = (dispatch: Dispatch<*>): ToggleTodoProp => ({
-  toggleTodo: (id: number): ToggleTodoAction => dispatch(toggleTodo(id))
+  toggleTodo: (id: number): ToggleTodoAction => dispatch(toggleTodo(id)),
+  fetchTodos: fetchTodos(dispatch)
 })
 
 export default connect(

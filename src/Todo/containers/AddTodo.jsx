@@ -2,9 +2,9 @@
 
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
-import { addTodo } from '../api-todo/actions/addTodo'
+import { postTodo, addTodo } from '../api-todo/actions/addTodo'
 import type { Element } from 'react'
-import { bindActionCreators, type Dispatch } from 'redux'
+// import { bindActionCreators, type Dispatch } from 'redux'
 import Button from '@atlaskit/button'
 import { Grid, GridColumn } from '@atlaskit/page'
 import FieldText from '@atlaskit/field-text'
@@ -13,14 +13,14 @@ type State = {
   value: string
 }
 type AddTodoProps = {
-  addTodo: (string) => any
+  addTodo: (string, Object) => any
 }
 
 export class AddTodo extends Component<AddTodoProps, State> {
   constructor (props: AddTodoProps) {
     super(props)
     this.state = { value: '' }
-
+    console.log('PROPS', props)
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
@@ -32,8 +32,12 @@ export class AddTodo extends Component<AddTodoProps, State> {
   handleSubmit (event: SyntheticEvent<HTMLFormElement>) {
     event.preventDefault()
     if (!this.state.value.trim()) return
-
-    this.props.addTodo(this.state.value)
+    console.log('VALUE', this.state.value)
+    const url = 'http://localhost:9001/addTodo'
+    const todo = {
+      text: this.state.value
+    }
+    this.props.addTodo(url, todo)
   }
 
   render (): Element<any> {
@@ -56,8 +60,8 @@ export class AddTodo extends Component<AddTodoProps, State> {
   }
 }
 
-export const mapDispatchToProps = (dispatch: Dispatch<*>): any => bindActionCreators({
-  addTodo
-}, dispatch)
+export const mapDispatchToProps = (dispatch: Dispatch<*>): any => ({
+  addTodo: postTodo(dispatch, addTodo)
+})
 
 export default connect(null, mapDispatchToProps)(AddTodo)

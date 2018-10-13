@@ -1,0 +1,27 @@
+{
+  "plugins": [
+    "transform-export-extensions",
+    "transform-flow-comments",
+    "transform-object-rest-spread",
+    ["transform-builtin-extend", {
+      "globals": ["Error"]
+    }],
+    ["module-resolver", {
+      "alias": {
+        "e2e": "./end-to-end-tests",
+        "src": "./src",
+        "tc": "./end-to-end-tests/test-cases"
+      }
+    }
+    ]
+  ],
+    "presets": [
+      ["env",
+        {
+          "targets": {
+            "node": ["8.11.1"]
+          }
+        }
+      ]
+    ]
+}
