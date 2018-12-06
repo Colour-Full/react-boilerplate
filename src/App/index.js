@@ -2,7 +2,6 @@ import 'babel-polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import { AppContainer } from 'redux-devtools'
 import configureStore from './store/configureStore'
 import { Provider } from 'react-redux'
 
@@ -19,9 +18,7 @@ if (module.hot) {
     const NextApp = require('./App').default
     ReactDOM.render(
       <Provider store={store}>
-        <AppContainer>
-          <NextApp />
-        </AppContainer>
+        <NextApp />
       </Provider>,
       document.getElementById('root'))
   })
