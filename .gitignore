@@ -13,3 +13,4 @@ yarn-debug.log*
 yarn-error.log*
 Dockerfile.prod
 Jenkinsfile
+.env.server

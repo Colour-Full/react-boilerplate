@@ -14,12 +14,13 @@ ReactDOM.render(
   document.getElementById('root'))
 
 if (module.hot) {
-  module.hot.accept('./App', () => {
+  module.hot.accept(['./App', 'react-redux'], () => {
     const NextApp = require('./App').default
+    const NextProvider = require('react-redux').Provider
     ReactDOM.render(
-      <Provider store={store}>
+      <NextProvider store={store}>
         <NextApp />
-      </Provider>,
+      </NextProvider>,
       document.getElementById('root'))
   })
 }

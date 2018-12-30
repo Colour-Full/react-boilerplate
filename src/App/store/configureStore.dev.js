@@ -33,8 +33,8 @@ export default function configureStore (initialState) {
 
   // Hot reload reducers (requires Webpack or Browserify HMR to be enabled)
   if (module.hot) {
-    module.hot.accept('src/reducers', () => {
-      const nextRootReducer = require('src/reducers').default
+    module.hot.accept('../../reducers', () => {
+      const nextRootReducer = require('../../reducers').default
       store.replaceReducer(nextRootReducer)
     }
     )
